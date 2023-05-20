@@ -10,17 +10,11 @@ const Navbar = () => {
           <img src={Logo}></img>
         </div>
         <div className='links'>
-         <Link className='link' to="/?cat=appetizers">
-          <h6>APPETIZERS</h6>
-        </Link>
-        <Link className="link" to="/?cat=maincourses">
-            <h6>MAIN COURSES</h6>
-          </Link>
           <Link className="link" to="/?cat=desserts">
-            <h6>DESSERTS</h6>
+            <h6>FIND RECIPES</h6>
           </Link>
-          <span>kaylee</span>
-          <span>Logout</span>
+          <Link to="/register"><span>Register</span></Link>
+          <Link to="/register"><span>Login</span></Link>
           <span className='write'>
             <Link className="link" to="/writerecipe">Add Recipe</Link>
           </span>

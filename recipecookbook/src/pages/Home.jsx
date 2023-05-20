@@ -5,7 +5,7 @@ const Home = () => {
     const posts = [
         {
           id: 1,
-          title: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+          title: "I'm a cool recipe (very clickable link)",
           desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A possimus excepturi aliquid nihil cumque ipsam facere aperiam at! Ea dolorem ratione sit debitis deserunt repellendus numquam ab vel perspiciatis corporis!",
           img: "https://images.pexels.com/photos/7008010/pexels-photo-7008010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
         },
@@ -42,7 +42,10 @@ const Home = () => {
                         <h1>{post.title}</h1>
                         </Link>
                         <p>{post.desc}</p>
+                        <Link className="link" to={`/recipe/${post.id}`}>
                         <button>Read More</button>
+                        </Link>
+                        
                     </div>
                     
                 </div>
